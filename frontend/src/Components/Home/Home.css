@@ -1,0 +1,95 @@
+.homeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.homeDiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.homeHeader {
+    margin-top: 20px;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 46px;
+}
+.homeParaph {
+    color: #cdcdcd;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 15px 0;
+}
+.searchBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: solid 1.5px #cdcdcd;
+    border-radius: 5px;
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+    margin-bottom: 50px;
+}
+
+.searchBar.active {
+    border: solid 2px #BFFF00;
+}
+
+.searchIcon {
+    display: flex;
+    transition: opacity 0.3s ease;
+}
+
+.searchBar.active .searchIcon {
+    opacity: 0;
+}
+
+.searchInput {
+    width: 100%;
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 14px;
+    color: #0B0F00;
+    font-weight: 500;
+
+}
+
+.searchInput::placeholder {
+    color: #cdcdcd;
+    font-size: 14px;
+}
+.cardsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.headerContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.titleContainer{
+    font-size: 20px;
+    color: #0B0F00;
+    font-weight: 600;
+}
+
+.cardsDisplay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

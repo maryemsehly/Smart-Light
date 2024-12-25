@@ -1,0 +1,108 @@
+.overlaySignin {
+    background-color: rgba(0, 0, 255, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+  }
+
+
+.HomeNavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 68px;
+    padding-left: 46px;
+    padding-right: 46px;
+    background-color: #0B0F00;
+    z-index: 1000;
+    position: relative;
+}
+
+
+.navbarHomeLeft {
+    display: flex;
+    gap: 8px;
+}
+
+.siteName {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.NavbarHomeItems {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    list-style-type: none;
+    margin: 0;
+}
+
+.Free {
+    align-items: center;
+    text-align: center;
+    font-size: 8px;
+    font-weight: bold;
+    color: #131A00;
+    background-color: #BFFF00;
+    padding: 1px 3px;
+    border-radius: 2px;
+    margin-left: 5px;
+}
+
+.NavbarHomeItm {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #6D6D6D;
+    cursor: pointer;
+}
+
+.NavbarHomeItm.active {
+    color: #FFFFFF;
+    padding: 10px 5px;
+    border-bottom: solid 1px #BFFF00;
+}
+
+.navbarHomeRight {
+    display: flex;
+    gap: 10px;
+}
+
+.loginBtn {
+    background-color: transparent;
+    color: #6D6D6D;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 3px 6px;
+    border: solid 1px #4F4F4F;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.loginBtn:hover{
+    border: solid 1px #BFFF00;
+    color: #FFFFFF;
+}
+
+.AccessBtn {
+    text-align: center;
+    background-color: #BFFF00;
+    color: #0D0D0D;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+.AccessBtn:hover {
+    background-color: #DDFE7A;
+    color: #424242;
+}

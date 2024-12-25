@@ -1,0 +1,39 @@
+.traffic-light {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  height: auto;
+  background-color: #333;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.roadLight1{
+    position: absolute;
+    top: 5%;
+    left: 73%;
+}
+
+.roadLight2 {
+    position: absolute;
+    left: 43%;
+    top: 65%;
+}
+
+.light {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #555;
+  margin: 10px auto;
+  transition: background-color 0.5s;
+}
+
+.red {
+  background-color: red;
+  
+}
+
+.green {
+  background-color: green;
+}

@@ -1,0 +1,83 @@
+.equipe {
+    padding: 80px 20px;
+    background-color: #f4f4f9;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.equipe__members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.equipe__member {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.equipe__member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.equipe__photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #00b4d8;
+    transition: transform 0.3s ease;
+}
+
+.equipe__member:hover .equipe__photo {
+    transform: rotate(360deg);
+}
+
+.equipe__name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+.equipe__role {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.equipe__description {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .equipe__members {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
